@@ -3,26 +3,30 @@
     background: #18954c;
     margin: 10px;
 }
+
 h1{
     text-align: center;
-    font-size: 35px;
+    font-size: 3em;
 }
 
 .root{
-
+    background: #f70000;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:repeat(9, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px;
 }
 
 #box-1{
-    grid-column: 1 / -3;
+    grid-column-start:1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
 }
-#box-2{
-    grid-column: 1 / -3                        ;
-}
-#box-4{
-    grid-column: 1 / -2;
-}
-#box-6 {
-    grid-column: 1 / -2;
+
+#box-5{
+    grid-column-start:5;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 9;
 }
